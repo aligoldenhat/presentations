@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Data mining</title>
+    
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="../impress/css/impress-demo.css" rel="stylesheet" />
+    <link href="../impress/css/impress-common.css" rel="stylesheet" />
+    <link href="../assets/fonts.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="../impress/favicon.png" />
+    <link rel="apple-touch-icon" href="../impress/apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
+
+    <div id="impress"
+        data-transition-duration="1000"
+        
+        data-width="1024"
+        data-height="768"
+        data-max-scale="3"
+        data-min-scale="0"
+        data-perspective="1000">
+    
+        <div class="step slide title" data-x="-1000" data-y="-1500">
+            <h1 style="text-align: center; font-size: 50px; margin: 100px;"><b>Data mining</b></br></br>
+                Image classification (MNIST)</h1>
+            <h2 style="text-align: center;">Ali Zarinkolah</h2>
+            <h2 style="text-align: center; font-size: 25px; margin: 10px;"><b>@aligoldenhat on <a href="https://github.com/aligoldenhat">Github</a></b></h2>
+            <h3 style="text-align: center; font-size: 25px; margin: 100px;">Kiarash Eslampour</h3>
+        </div>
+
+        <div class="step slide" data-x="-1000" data-y="-700">
+            <h1 style="text-align: left; font-size: 40px;">A microscopic image of neuron</h1>
+            <center><img src="https://i.pinimg.com/originals/b5/2c/f8/b52cf876fe0b316badd3cadb25773dbe.jpg" style="transform: rotate(90deg); width: 50%;"></center>
+        </div>
+    
+        <div class="step slide" data-x="0" data-y="-700">
+            <h1 style="text-align: left; font-size: 40px;">The structure of neuron</h1>
+            <center><img src="structure-of-neuron.png" width="90%" style="margin-top: 10px;"></center>
+        </div>
+
+        <div class="step slide" data-x="1000" data-y="-700">
+            <h1 style="text-align: left; font-size: 40px;">3D Animation of a Neural Network</h1>
+            <center><iframe width="752" height="500" src="https://www.youtube.com/embed/-SHBnExxub8?si=t2S4DadNGpEgA0N1" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="margin-top: 50px;">
+            </iframe></center>
+        </div>
+
+        <div class="step" data-x="2000" data-y="-700">
+            <center><img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Action_potential_vert.png" style="width: 450px;"></center>
+        </div>
+
+        <div class="step slide" data-x="3000" data-y="-700">
+            <h1 style="font-size: 40px;">Visual system</h1>
+            <center><img src="visual-system.png" style="width: 90%; margin-top: 80px;"></center>
+        </div>
+        
+        <div class="step slide" data-x="-1000" data-y="100">
+            <h1 style="font-size: 40px;">Basic neural</h1>
+            <center><img src="https://images.spiceworks.com/wp-content/uploads/2022/05/18113202/The-Architecture-of-a-Neural-Network.png" style="width: 90%; margin-top: 80px;"></center>
+        </div>
+
+        <div class="step slide" data-x="0" data-y="100">
+            <h1>Feature extraction levels</h1>
+            <center><img src="features-extraction-level.png" width="100%" style="margin-top: 100px;"></center>
+        </div>
+
+        <div class="step slide" data-x="1000" data-y="100">
+            <center><img src="feature-extraction-level-neural.png" width="90%"></center>
+        </div>
+
+        <div class="step slide" data-x="2000" data-y="100">
+            <h1>saliency mapping</h1>
+            <center><img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210722235025/Saliency-maps-generated-using-Grad-CAM-Grad-CAM-and-Smooth-Grad-CAM-respectively_W640.jpg"
+                width="90%" style="margin-top: 30px;"></center>
+        </div>
+
+        <div class="step" data-x="3000" data-y="100">
+            <center><img src="saliency-mapping-mnist.png" style="width: 450px;"></center>
+        </div>
+
+        <div class="step slide" data-x="4000" data-y="100">
+            <h1>Saliency of breast lesions in breast cancer detection</h1>
+            <center><img src="https://media.springernature.com/lw1200/springer-static/image/art%3A10.1038%2Fs41598-023-46921-3/MediaObjects/41598_2023_46921_Fig1_HTML.png"
+                style="width: 90%; margin-top: 10px;"></center>
+            <a href="https://www.nature.com/articles/s41598-023-46921-3"
+                style="font-size: 18px; display: inline-block; margin-top: 5px;">https://www.nature.com/articles/s41598-023-46921-3
+            </a>
+        </div>
+        
+        <div class="step slide" data-x="5000" data-y="100">
+            <h1>Saliency Detection Model Using Multi-Channel MRI</h1>
+            <center><img src="12-Figure11-1.png" style="width: 95%; margin-top: 10px;"></center>
+        </div>
+
+        <div class="step slide" data-x="-1000" data-y="900">
+            <h1>MNIST Dataset</h1>
+            <center><img src="mnist.webp" width="100%" style="margin-top: 50px;"></center>
+            <a href="https://en.wikipedia.org/wiki/MNIST_database"
+                style="font-size: 15px;">https://en.wikipedia.org/wiki/MNIST_database
+            </a>
+        </div>
+
+        <div class="step" data-x="0" data-y="900">
+            <center><h1>Lets <b>train</b></h1></center>
+            <center><a href="https://colab.research.google.com/github/aamini/introtodeeplearning/blob/master/lab2/solutions/Part1_MNIST_Solution.ipynb"
+                style="margin-top: 20px;">Colab MNIST training</a></center>
+        </div>
+
+        <div class="step" data-x="-1000" data-y="1700">
+            <center><iframe width="832" height="468" src="https://www.youtube.com/embed/FVENsGSP3ds?autoplay=1&loop=1&playlist=FVENsGSP3ds" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-radius: 4%;"></iframe></center>
+        </div>
+        
+        <div class="step slide" data-x="0" data-y="1700">
+            <center><h1 style="font-size: 50px; margin-top: 100px;">Thanks</h1></center>
+        </div>
+
+        <div class="step" data-x="1000" data-y="1700">
+            <center><img src="the-end.jpg" style="border-radius: 2%; width: 110%;"></center>
+        </div>
+        
+        <div id="overview" class="step" data-x="2000" data-y="100" data-z="0" data-scale="6">
+        </div>
+    
+    </div>
+    
+
+    <div id="impress-toolbar"></div>
+
+    <div class="impress-progressbar"><div></div></div>
+    <div class="impress-progress"></div>
+
+    <script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+    }
+    </script>
+
+    <script src="../impress/js/impress.js"></script>
+    <script>impress().init();</script>
+    
+    </body>
+    </html>
