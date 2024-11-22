@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Domain-Driven Design</title>
+    
+    <meta name="description" content="presentation for Data mining course" />
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="../impress/css/impress-demo.css" rel="stylesheet" />
+    <link href="../impress/css/impress-common.css" rel="stylesheet" />
+    <link href="../assets/fonts.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="../impress/favicon.png" />
+    <link rel="apple-touch-icon" href="../impress/apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
+
+    <div id="impress"
+        data-transition-duration="1000"
+        
+        data-width="1024"
+        data-height="768"
+        data-max-scale="3"
+        data-min-scale="0"
+        data-perspective="1000">
+    
+        <div class="step slide title" data-x="-1000" data-y="-1500">
+            <h1 style="text-align: center; font-size: 50px; margin-top: 40px;"><b>Domain-Driven Design</b></h1>
+            <h1 style="text-align: center; font-size: 50px; margin-top: 40px;">The Art of Connecting Software to Reality</h1>
+            <h1 style="text-align: center; margin-top: 70px; font-size: 40px;">Ali Zarinkolah</h1>
+            <h2 style="text-align: center; font-size: 25px; margin-top: 5px;"><b>@aligoldenhat on <a href="https://github.com/aligoldenhat">Github</a></b></h2>
+            
+            <center><img src="qr.png" width="30%" style="margin-top: 10px;"></center>
+            <p style="text-align: center; font-size: 20px; margin-top: 0px;">This presentation was created using <a href="https://github.com/impress/impress.js">impress.js</a></p>
+        </div>
+
+        <div class="step slide" data-x="-1000" data-y="-700">
+            <h1 style="text-align: left; font-size: 40px;">What is Domain-Driven Design?</h1>
+            <center><img src="WhatIsDDD.webp" width="100%" style="margin-top: 30px;"></center>
+            <p style="font-size: 15px; margin-top: 10px; line-height: 1.5;">Domain-Driven Design (DDD) is an approach to software development that emphasizes the connection between the implementation and the business domain. It helps teams build models that solve real problems.</p>
+        </div>
+    
+        <div class="step slide" data-x="0" data-y="-700">
+            <h1 style="text-align: left; font-size: 40px;">The Domain and the Ubiquitous Language</h1>
+            <center><img src="ubiquitous-language.png" width="100%" style="margin-top: 30px;"></center>
+            <p style="font-size: 15px; margin-top: 10px; line-height: 1.5;">The <b>domain</b> is the core area of knowledge around which the software is built. The <b>ubiquitous language</b> is a shared language between developers and domain experts, ensuring everyone is on the same page.</p>
+        </div>
+
+        <div class="step slide" data-x="1000" data-y="-700">
+            <h1 style="text-align: left; font-size: 40px;">Bounded Context</h1>
+            <center><img src="bounded-context.png" width="100%" style="margin-top: 30px;"></center>
+            <p style="font-size: 15px; margin-top: 10px; line-height: 1.5;">A <b>bounded context</b> is a boundary within which a particular domain model is defined and applicable. It helps to keep complexity manageable by isolating different aspects of the system.</p>
+        </div>
+
+        <div class="step slide" data-x="2000" data-y="-700">
+            <h1 style="text-align: left; font-size: 40px;">Entities and Value Objects</h1>
+            <p style="font-size: 20px; margin-top: 10px; line-height: 1.5;"><b>Entities</b> have a distinct identity that runs through time, while <b>value objects</b> are immutable and only defined by their attributes. Understanding the difference is crucial for modeling the domain effectively.</p>
+            <center><img src="entity-vs-value-object.png" width="70%" style="margin-top: 30px;"></center>
+        </div>
+
+        <div class="step" data-x="3000" data-y="-700">
+            <center><img src="https://i.sstatic.net/9uK4F.png" width="100%"></center>
+        </div>
+
+        <div class="step slide" data-x="4000" data-y="-700">
+            <h1 style="text-align: left; font-size: 40px;">Aggregates and Repositories</h1>
+            <p style="font-size: 20px; margin-top: 10px; line-height: 1.5;">An <b>aggregate</b> is a cluster of related entities and value objects treated as a single unit. A <b>repository</b> provides an abstraction for persisting and retrieving these aggregates.</p>
+            <center><img src="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/media/implement-value-objects/value-object-within-aggregate.png" width="65%" style="margin-top: 30px;"></center>
+        </div>
+
+        <div class="step slide" data-x="5000" data-y="-700">
+            <h1 style="text-align: left; font-size: 40px;">Event Storming</h1>
+            <p style="font-size: 18px; margin-top: 10px; line-height: 1.5;"><b>Event storming</b> is a workshop format that helps teams explore complex domains by modeling business events. It’s a powerful tool for aligning domain knowledge.</p>
+            <center><img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Event_Storming_example_process.jpg" width="85%" style="margin-top: 20px;"></center>
+        </div>
+
+        <div class="step slide" data-x="-1000" data-y="100">
+            <h1 style="text-align: left; font-size: 40px;">Example: E-Commerce Domain</h1>
+            <p style="font-size: 28px; margin-top: 60px;">Consider an e-commerce platform: <br></br>The <b>Order</b> is an entity, while <b>Shipping Address</b> might be a value object. Bounded contexts might include <b>Order Management</b> and <b>Customer Support</b>.</p>
+        </div>
+
+        <div class="step slide" data-x="0" data-y="100">
+            <h1 style="text-align: center; font-size: 40px;">Core Principles Recap</h1>
+            <ul style="font-size: 28px; list-style-type: square; margin-top: 20px;">
+                <li>Focus on the <b>domain</b> and the <b>ubiquitous language</b>.</li>
+                <li>Define <b>bounded contexts</b> to manage complexity.</li>
+                <li>Identify <b>entities, value objects, aggregates,</b> and <b>repositories</b>.</li>
+                <li>Collaborate with domain experts.</li>
+            </ul>
+        </div>
+
+        <div class="step" data-x="-1000" data-y="900">
+            <center>
+                <video width="832" height="468" controls autoplay loop muted style="border-radius: 4%;">
+                    <source src="manaskingquestion.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </center>
+        </div>
+
+        <div class="step" data-x="0" data-y="900">
+            <center><img src="the-end.jpg" style="border-radius: 2%; width: 110%;"></center>
+        </div>
+        
+        <div id="overview" class="step" data-x="2000" data-y="-300" data-z="0" data-scale="6"></div>
+    
+    </div>
+    
+
+    <div id="impress-toolbar"></div>
+
+    <div class="impress-progressbar"><div></div></div>
+    <div class="impress-progress"></div>
+
+    <script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+    }
+    </script>
+
+    <script src="../impress/js/impress.js"></script>
+    <script>impress().init();</script>
+    
+    </body>
+    </html>
