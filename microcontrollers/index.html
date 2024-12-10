@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Domain-Driven Design</title>
+    
+    <meta name="description" content="presentation for Data mining course" />
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="../impress/css/impress-demo.css" rel="stylesheet" />
+    <link href="../impress/css/impress-common.css" rel="stylesheet" />
+    <link href="../assets/fonts.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="../impress/favicon.png" />
+    <link rel="apple-touch-icon" href="../impress/apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
+
+    <div id="impress"
+        data-transition-duration="1000"
+        
+        data-width="1024"
+        data-height="768"
+        data-max-scale="3"
+        data-min-scale="0"
+        data-perspective="1000">
+    
+        <div class="step slide title" data-x="-1000" data-y="-1500">
+            <h1 style="text-align: center; font-size: 48px; margin-top: 200px; margin-top: 60px;">
+                <b>Integrating AI with Microcontrollers</b></br></br>
+                for Edge Computing</h1>
+            <h1 style="text-align: center; margin-top: 100px;">Ali Zarinkolah</h1>
+            <h2 style="text-align: center; font-size: 30px; margin-top: 1px;"><b>@aligoldenhat on <a href="https://github.com/aligoldenhat">Github</a></b></h2>
+            <p style="text-align: center; font-size: 20px; margin-top: 250px;">This presentation was created using <a href="https://github.com/impress/impress.js">impress.js</a></p>
+        </div>
+
+        <!-- Introduction to Edge Computing -->
+        <div class="step slide" data-x="-1000" data-y="-700">
+            <h1 style="text-align: left; font-size: 40px;">What is Edge Computing?</h1>
+            <center><img src="https://www.fsp-group.com/upload/230221-63F436389ECE4.png" width="100%" style="margin-top: 30px;"></center>
+            <p style="font-size: 15px; margin-top: 10px; line-height: 1.5;">
+                Edge Computing refers to the processing of data near the source of data generation rather than relying solely on centralized data centers. This approach reduces latency, conserves bandwidth, and enhances real-time data processing capabilities.
+            </p>
+        </div>
+
+        <!-- Role of Microcontrollers in Edge Computing -->
+        <div class="step slide" data-x="0" data-y="-700">
+            <h1 style="text-align: left; font-size: 40px;">Role of Microcontrollers in Edge Computing</h1>
+            <center><img src="https://iiot-world-com.b-cdn.net/wp-content/uploads/2018/01/microcontroller.png" width="100%" style="margin-top: 30px;"></center>
+            <p style="font-size: 15px; margin-top: 10px; line-height: 1.5;">
+                Microcontrollers are compact integrated circuits designed to govern specific operations in embedded systems. In edge computing, they act as the brains of IoT devices, enabling local data processing, decision-making, and reducing the need for constant cloud connectivity.
+            </p>
+        </div>
+
+        <!-- Integrating AI with Microcontrollers -->
+        <div class="step slide" data-x="1000" data-y="-700">
+            <h1 style="text-align: left; font-size: 40px;">Integrating AI with Microcontrollers</h1>
+            <center><img src="microcontrollers.webp" width="100%" style="margin-top: 30px;"></center>
+            <p style="font-size: 15px; margin-top: 10px; line-height: 1.5;">
+                Integrating AI into microcontrollers enables intelligent processing at the edge. This integration allows devices to perform tasks such as image recognition, anomaly detection, and predictive maintenance without relying heavily on cloud resources.
+            </p>
+        </div>
+
+        <!-- Popular Microcontrollers for AI Edge Computing -->
+        <div class="step slide" data-x="2000" data-y="-700">
+            <h1 style="text-align: left; font-size: 40px;">Popular Microcontrollers for AI Edge Computing</h1>
+            <ul style="font-size: 20px; margin-top: 20px; line-height: 1.5;">
+                <li><b>STM32H7:</b> High-performance ARM Cortex-M7 processor suitable for complex AI models.</li>
+                <li><b>ESP32:</b> Dual-core processor with built-in Wi-Fi and Bluetooth, ideal for IoT applications.</li>
+                <li><b>NVIDIA Jetson Nano:</b> Powerful GPU-based microcontroller for deep learning and computer vision tasks.</li>
+                <li><b>ARM Cortex-M7:</b> Balances performance and power efficiency for embedded AI applications.</li>
+                <li><b>Microchip SAM V71:</b> Advanced architecture supporting multiple AI frameworks.</li>
+            </ul>
+            <center><img src="https://www.nvidia.com/content/dam/en-zz/Solutions/intelligent-machines/embedded-systems/jetson-nano/product-development/jetson-nano-og-100%25.jpg" width="70%" style="margin-top: 30px;"></center>
+        </div>
+
+        <!-- Techniques for Optimizing AI Models on Microcontrollers -->
+        <div class="step slide" data-x="-1000" data-y="100">
+            <h1 style="text-align: left; font-size: 40px;">Techniques for Optimizing AI Models on Microcontrollers</h1>
+            <ul style="font-size: 18px; margin-top: 20px; line-height: 1.5;">
+                <li><b>Model Quantization:</b> Reducing the precision of the model weights to decrease size and increase speed.</li>
+                <li><b>Pruning:</b> Eliminating redundant neurons and connections to streamline the model.</li>
+                <li><b>Edge TPU Acceleration:</b> Utilizing specialized hardware accelerators for faster computations.</li>
+                <li><b>Efficient Architectures:</b> Designing lightweight neural network architectures like MobileNet.</li>
+                <li><b>Firmware Optimization:</b> Enhancing the microcontroller firmware for better performance.</li>
+            </ul>
+            <center><img src="https://ars.els-cdn.com/content/image/1-s2.0-S095758202300914X-ga1_lrg.jpg" width="90%" style="margin-top: 30px;"></center>
+        </div>
+
+        <!-- Applications of AI at the Edge -->
+        <div class="step slide" data-x="0" data-y="100">
+            <h1 style="text-align: left; font-size: 40px;">Applications of AI at the Edge</h1>
+            <ul style="font-size: 20px; margin-top: 20px; line-height: 1.5;">
+                <li><b>Smart Home Devices:</b> Voice assistants, smart thermostats, and security systems.</li>
+                <li><b>Industrial IoT:</b> Predictive maintenance, quality control, and automation.</li>
+                <li><b>Healthcare:</b> Wearable devices for monitoring vital signs and detecting anomalies.</li>
+                <li><b>Automotive:</b> Advanced driver-assistance systems (ADAS) and autonomous vehicles.</li>
+                <li><b>Environmental Monitoring:</b> Air quality sensors and wildlife tracking.</li>
+            </ul>
+            <center><img src="https://osmphp.s3.amazonaws.com/6227cd5d3208b-Edge+AI.png" width="90%" style="margin-top: 30px;"></center>
+        </div>
+
+        <!-- Challenges and Solutions -->
+        <div class="step slide" data-x="1000" data-y="100">
+            <h1 style="text-align: left; font-size: 40px;">Challenges and Solutions</h1>
+            <center><img src="https://fastercapital.com/i/Edge-Computing--Empowering-Real-time-Decisions-in-the-Cloud--Challenges-and-Limitations-of-Edge-Computing.webp" width="80%" style="margin-top: 30px;"></center>
+            <ul style="font-size: 20px; margin-top: 20px; line-height: 1.5;">
+                <li><b>Limited Processing Power:</b> Optimize models and use hardware accelerators.</li>
+                <li><b>Energy Consumption:</b> Implement power-efficient algorithms and low-power microcontrollers.</li>
+                <li><b>Memory Constraints:</b> Use model compression techniques and efficient memory management.</li>
+                <li><b>Connectivity Issues:</b> Design for intermittent connectivity with robust offline capabilities.</li>
+                <li><b>Security:</b> Implement secure boot, encryption, and regular firmware updates.</li>
+            </ul>
+        </div>
+
+        <!-- Conclusion -->
+        <div class="step slide" data-x="2000" data-y="100">
+            <h1 style="text-align: center; font-size: 40px;">Conclusion</h1>
+            <ul style="font-size: 27px; list-style-type: square; margin-top: 60px;">
+                <li>Integrating AI with microcontrollers empowers intelligent edge devices.</li>
+                <li>Optimizing AI models is crucial for performance and efficiency.</li>
+                <li>Wide range of applications enhances various industries.</li>
+                <li>Ongoing advancements will continue to push the boundaries of edge computing.</li>
+            </ul>
+        </div>
+
+        <div class="step" data-x="-1000" data-y="900">
+            <center>
+                <video width="832" height="468" controls autoplay loop muted style="border-radius: 4%;">
+                    <source src="manaskingquestion.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </center>
+        </div>
+
+        <div class="step" data-x="0" data-y="900">
+            <center><img src="the-end.jpg" style="border-radius: 2%; width: 100%;"></center>
+        </div>
+        
+        <div id="overview" class="step" data-x="1500" data-y="-200" data-z="0" data-scale="5"></div>
+    
+    </div>
+    
+
+    <div id="impress-toolbar"></div>
+
+    <div class="impress-progressbar"><div></div></div>
+    <div class="impress-progress"></div>
+
+    <script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+    }
+    </script>
+
+    <script src="../impress/js/impress.js"></script>
+    <script>impress().init();</script>
+    
+    </body>
+    </html>
